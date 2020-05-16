@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es_MX">
+
+<head>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+    <script src="https://kit.fontawesome.com/ff6c86cdd7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/web.css">
+    <title>F&W Frontend Services</title>
+</head>
+
+<body>
+    <header class="w-header">
+        <div class="left-side">
+            <img class="logo-w" src="img/default-monochrome.svg">
+            <a class="btn btn-a" href="#contacto">Contactar</a>
+        </div>
+        <div class="right-side">
+            <nav class="w-navigation">
+                <a href="#about">Acerca de Mí</a>
+                <a href="#skills">Skills</a>
+                <a href="#pricing">Costos</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+        </div>
+    </header>
+    <main class="about-w">
+        <div id="about" class="abt-txt">
+            <div class="contenedor ">
+                <h1 class="main-title">Acerca de mí</h1>
+                <p>
+                    Soy un desarrollador frontend con grandes capacidades creativas, además de una excelente habilidad
+                    para desarrollar sitios web estáticos.
+                </p>
+                <p>
+                    Me encanta transformar, por lo que si tu negocio o empresa necesita una renovación, un sitio web es
+                    un gran comienzo. Contáctame y lleva tu negocio a otro nivel.
+                </p>
+            </div>
+        </div>
+        <div id="skills" class="skills">
+            <div class="contenedor sklls">
+                <h2 class="main-title">Skills</h2>
+                <div class="donuts">
+                    <article class="donut">
+                        <img src="img/html.png">
+                        <p>HTML</p>
+                    </article>
+                    <article class="donut">
+                        <img src="img/css.png">
+                        <p>CSS</p>
+                    </article>
+                    <article class="donut">
+                        <img src="img/js.png">
+                        <p>JS</p>
+                    </article>
+                    <article class="donut">
+                        <img src="img/sass.png">
+                        <p>Sass</p>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </main>
+    <section class="works">
+        <h3 class="main-title">Portafolio</h3>
+        <div class="bg-pink">
+            <div class="contenedor imgs-work">
+                <div class="work-card">
+                    <img src="img/capture-1.png">
+                    <a href="https://nutrilinea.mx" target="_blank">Nutrilínea</a>
+                </div>
+                <div class="work-card">
+                    <img src="img/capture-2.png">
+                    <a href="https://capacitamx.com" target="_blank">Capacita Seguridad Industrial</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="pricing" class="costos">
+        <div class="contenedor">
+            <h3 class="main-title">Costos</h3>
+            <div class="plans-container">
+                <article class="plan">
+                    <div class="color-plan pa">
+                        <h4>Basic</h4>
+                    </div>
+                    <!-- <b class="price">$ 2,000</b> -->
+                    <div class="carac-plan">
+                        <b>Incluye</b>
+                        <ul class="ventajas">
+                            <li class='li-plan'><i class="fas fa-check"></i>
+                                <p>1 a 5 secciones</p>
+                            </li>
+                            <li class='li-plan'><i class="fas fa-check"></i>
+                                <p>Deploy a internet</p>
+                            </li>
+                            <li class='li-plan'><i class="fas fa-check"></i>
+                                <p>HTML, CSS y JS</p>
+                            </li>
+                            <li class='li-plan'><i class="fas fa-times"></i>
+                                <p>Dominio</p>
+                            </li>
+                            <li class='li-plan'><i class="fas fa-check"></i>
+                                <p>Entrega en 10 días hábiles<p>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="basic-plan.html" class="btn btn-b">Elegir</a>
+                </article>
+                <article class="plan">
+                    <div class="color-plan pb">
+                        <h4>Hero</h4>
+                    </div>
+                    <!-- <b class="price">$ 2,000</b> -->
+                    <div class="carac-plan">
+                        <b>Incluye</b>
+                        <ul class="ventajas">
+                            <li class="li-plan"><i class="fas fa-check"></i>
+                                <p>1 a 15 secciones</p>
+                            </li>
+                            <li class="li-plan"><i class="fas fa-check"></i>
+                                <p>Deploy a internet</p>
+                            </li>
+                            <li class="li-plan"><i class="fas fa-check"></i>
+                                <p>Todas las ventajas anteriores</p>
+                            </li>
+                            <li class="li-plan"><i class="fas fa-check"></i>
+                                <p>Mantenimiento gratis por 3 meses</p>
+                            </li>
+                            <li class="li-plan"><i class="fas fa-check"></i>
+                                <p>Dominio y correo electrónico</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="hero-plan.html" class="btn btn-c">Elegir</a>
+                </article>
+            </div>
+        </div>
+    </section>
+    <section id="contacto" class="contacto-w">
+        <h2 class="main-title">Contáctame</h2>
+        <div class="media-buttons-w">
+            <a class="smb" href="https://www.facebook.com/jesusfloresweb"><i class="fab fa-facebook-f"></i></a>
+            <a class="smb" href="mailto:jesus.flores.esp@gmail.com"><i class="fas fa-envelope"></i></a>
+            <a class="smb" href="https://wa.me/525566232478"><i class="fab fa-whatsapp"></i></a>
+            <a class="smb" href="https://t.me/jfloresespinoza"><i class="fab fa-telegram"></i></a>
+        </div>
+    </section>
+    <footer class="w-footer">
+        <p>Sitio Web Desarrollado por <a href="/">Jesús Flores Web Design</a></p>
+    </footer>
+</body>
+
+</html>
