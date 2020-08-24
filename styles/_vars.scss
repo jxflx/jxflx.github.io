@@ -4,3 +4,28 @@ $rojo: #f2274c;
 $yellow: #fdc835;
 $green: #07c592;
 $azul-2: #0f71f2;
+
+@mixin cool-bg {
+    background: linear-gradient(163deg, $rojo, #0f71f2);
+    background-size: 400% 400%;
+
+    -webkit-animation: Animation-header 8s ease infinite;
+    -moz-animation: Animation-header 8s ease infinite;
+    animation: Animation-header 8s ease infinite;
+}
+
+@-webkit-keyframes Animation-header {
+    0%{background-position:32% 0%}
+    50%{background-position:69% 100%}
+    100%{background-position:32% 0%}
+}
+@-moz-keyframes Animation-header {
+    0%{background-position:32% 0%}
+    50%{background-position:69% 100%}
+    100%{background-position:32% 0%}
+}
+@keyframes Animation-header {
+    0%{background-position:32% 0%}
+    50%{background-position:69% 100%}
+    100%{background-position:32% 0%}
+}

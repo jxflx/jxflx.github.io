@@ -1,38 +1,76 @@
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
+@-webkit-keyframes Animation-header {
+  0% {
+    background-position: 32% 0%;
+  }
+  50% {
+    background-position: 69% 100%;
+  }
+  100% {
+    background-position: 32% 0%;
+  }
+}
+
+@keyframes Animation-header {
+  0% {
+    background-position: 32% 0%;
+  }
+  50% {
+    background-position: 69% 100%;
+  }
+  100% {
+    background-position: 32% 0%;
+  }
+}
+
 body {
   font-family: 'Poppins', sans-serif;
   font-size: 1.8rem;
   color: #000;
+  line-height: 1.7;
 }
 
 header {
-  height: 100vh;
-  background-color: #f2274c;
-  background-position: center;
-  background-size: cover;
-  position: relative;
+  padding-top: 5rem;
+  background: linear-gradient(163deg, #f2274c, #0f71f2);
+  background-size: 400% 400%;
+  -webkit-animation: Animation-header 8s ease infinite;
+  animation: Animation-header 8s ease infinite;
 }
 
-.svg-header {
-  position: absolute;
+header svg {
+  display: block;
   width: 100%;
-  bottom: 0;
 }
 
 .me-header {
   color: #fff;
-  background-color: #021373;
-  padding: 9rem;
-  border-radius: 30% 70% 70% 30% / 30% 33% 67% 70%;
+  padding: 4.5rem;
   text-align: center;
+}
+
+.me-header h1 {
+  font-weight: 700;
+}
+
+@media (max-width: 600px) {
+  .me-header {
+    background-color: transparent;
+    border-radius: none;
+  }
 }
 
 .me-header img {
   border-radius: 50%;
-  height: 20rem;
+  max-height: 20rem;
 }
 
-.site-header svg {
-  display: block;
+.about {
+  margin-top: 5rem;
+}
+
+.about h2 {
+  font-weight: 700;
+  color: #f2274c;
 }

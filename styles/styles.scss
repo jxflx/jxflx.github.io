@@ -6,43 +6,42 @@ body {
     font-family: 'Poppins', sans-serif;
     font-size: 1.8rem;
     color: #000;
+    line-height: 1.7;
 }
 
 header {
-    height: 100vh;
-    // background-image: url('../img/bg-1.png');
-    background-color: $rojo;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-}
-.svg-header {
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-}
-.me-header {
-    color: #fff;
-    // padding-top: 30vh;
-    background-color: $azul;
-    padding: 9rem;
-    border-radius: 30% 70% 70% 30% / 30% 33% 67% 70%; 
-    text-align: center;
-    img {
-        border-radius: 50%;
-        height: 20rem;
-    }
-}
+    padding-top: 5rem;
+    
+    @include cool-bg;
 
-.site-header {
+    
     svg {
         display: block;
+        width: 100%;
     }
 }
 
-// .vody {
-//     background-color: $rojo;
-//     svg {
-//         height: 100vh;
-//     }
-// }
+.me-header {
+    color: #fff;
+    padding: 4.5rem;
+    text-align: center;
+    h1 {
+        font-weight: 700;
+    }
+    @media (max-width: 600px){
+        background-color: transparent;
+        border-radius: none;
+    }
+    img {
+        border-radius: 50%;
+        max-height: 20rem;
+    }
+}
+
+.about {
+    margin-top: 5rem;
+    h2 {
+        font-weight: 700;
+        color: $rojo;
+    }
+}
