@@ -9,6 +9,8 @@ body {
 header {
   height: 100vh;
   background-color: #f2274c;
+  background-position: center;
+  background-size: cover;
   position: relative;
 }
 
@@ -19,13 +21,18 @@ header {
 }
 
 .me-header {
-  max-height: 50vh;
   color: #fff;
-  padding-top: 30vh;
+  background-color: #021373;
+  padding: 9rem;
+  border-radius: 30% 70% 70% 30% / 30% 33% 67% 70%;
   text-align: center;
 }
 
 .me-header img {
   border-radius: 50%;
   height: 20rem;
+}
+
+.site-header svg {
+  display: block;
 }
