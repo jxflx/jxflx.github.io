@@ -73,4 +73,56 @@ header svg {
 .about h2 {
   font-weight: 700;
   color: #f2274c;
+  font-size: 4.3rem;
+}
+
+.portfolio {
+  background-color: #07c592;
+  padding-bottom: 3rem;
+}
+
+.portfolio svg {
+  background-color: #fff;
+  display: block;
+}
+
+.portfolio h2 {
+  font-size: 13vw;
+  font-weight: bold;
+}
+
+@media (max-width: 750px) {
+  .portfolio h2 {
+    font-size: 17vw;
+  }
+}
+
+.portfolio .container-port {
+  width: 90%;
+  margin: 6rem auto 2rem auto;
+}
+
+.grid-3 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -webkit-column-gap: 2rem;
+          column-gap: 2rem;
+}
+
+@media (max-width: 800px) {
+  .grid-3 {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.port-image {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.port-image a {
+  color: #021373;
 }
