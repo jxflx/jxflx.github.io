@@ -5,8 +5,8 @@ $yellow: #fdc835;
 $green: #07c592;
 $azul-2: #0f71f2;
 
-@mixin cool-bg {
-    background: linear-gradient(163deg, $rojo, #0f71f2);
+@mixin cool-bg($color-a, $color-b) {
+    background: linear-gradient(163deg, $color-a, $color-b);
     background-size: 400% 400%;
 
     -webkit-animation: Animation-header 8s ease infinite;

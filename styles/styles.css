@@ -126,3 +126,99 @@ header svg {
 .port-image a {
   color: #021373;
 }
+
+.blog-intro {
+  min-height: 100vh;
+  background-color: #282a36;
+}
+
+.blog-intro h2 {
+  font-size: 10rem;
+  color: #f8f8f2;
+}
+
+.blog-intro h2 span {
+  background: linear-gradient(163deg, #ffb86c, #50fa50);
+  background-size: 400% 400%;
+  -webkit-animation: Animation-header 8s ease infinite;
+  animation: Animation-header 8s ease infinite;
+  padding: 0.3rem 1.3rem;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-style: italic;
+  font-size: 11rem;
+  -webkit-text-decoration: underline #8be9fd;
+          text-decoration: underline #8be9fd;
+  max-width: 100vw;
+}
+
+@media (max-width: 600px) {
+  .blog-intro h2 {
+    font-size: 8rem;
+    line-height: 1;
+  }
+  .blog-intro h2 span {
+    font-size: 8.5rem;
+  }
+}
+
+.blg-btn {
+  margin-top: 10vh;
+  background: linear-gradient(163deg, #bd93f9, #ff79c6);
+  background-size: 400% 400%;
+  -webkit-animation: Animation-header 8s ease infinite;
+  animation: Animation-header 8s ease infinite;
+  color: #282a36 !important;
+  padding: 3rem;
+  border-radius: 3rem;
+}
+
+.blg-btn span {
+  color: #50fa7b;
+}
+
+.blg-btn:hover {
+  text-decoration: none !important;
+  background: linear-gradient(163deg, #8be9fd, #50fa7b);
+  background-size: 400% 400%;
+  -webkit-animation: Animation-header 8s ease infinite;
+  animation: Animation-header 8s ease infinite;
+}
+
+.blg-btn:hover span {
+  color: #ff79c6;
+}
+
+@media (max-width: 650px) {
+  .blg-btn {
+    margin-top: 5rem;
+  }
+}
+
+.site-footer {
+  text-align: center;
+  background-color: #f2274c;
+  min-height: 50vh;
+}
+
+.site-footer div * {
+  color: #fff;
+}
+
+.site-footer div h2 {
+  font-size: 8rem;
+}
+
+@media (max-width: 555px) {
+  .site-footer div h2 {
+    font-size: 5rem;
+    line-height: 1.3;
+    padding-top: 3rem;
+  }
+}
+
+.site-footer .social-media {
+  margin: 6rem auto;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
