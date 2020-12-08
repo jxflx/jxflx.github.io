@@ -13,6 +13,10 @@ body {
     line-height: 1.7;
 }
 
+.container {
+    width: 80%
+}
+
 @mixin cool-bg($color-a, $color-b) {
     background: linear-gradient(163deg, $color-a, $color-b);
     background-size: 400% 400%;
