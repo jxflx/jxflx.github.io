@@ -1,0 +1,20 @@
+@import 'vars';
+
+.lab-nav {
+    @include cool-bg($green, $azul-2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    * {
+        padding: 1rem;
+        color: #fff !important;
+    }
+
+    .logo {
+        a {
+            color: $azul !important;
+        }
+    }
+}

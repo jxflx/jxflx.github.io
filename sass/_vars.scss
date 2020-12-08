@@ -1,0 +1,66 @@
+// Colores
+$azul: #021373;
+$rojo: #f2274c;
+$yellow: #fdc835;
+$green: #07c592;
+$azul-2: #0f71f2;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    color: #000;
+    line-height: 1.7;
+}
+
+@mixin cool-bg($color-a, $color-b) {
+    background: linear-gradient(163deg, $color-a, $color-b);
+    background-size: 400% 400%;
+
+    -webkit-animation: Animation-header 8s ease infinite;
+    -moz-animation: Animation-header 8s ease infinite;
+    animation: Animation-header 8s ease infinite;
+}
+
+@-webkit-keyframes Animation-header {
+    0% {
+        background-position: 32% 0%
+    }
+
+    50% {
+        background-position: 69% 100%
+    }
+
+    100% {
+        background-position: 32% 0%
+    }
+}
+
+@-moz-keyframes Animation-header {
+    0% {
+        background-position: 32% 0%
+    }
+
+    50% {
+        background-position: 69% 100%
+    }
+
+    100% {
+        background-position: 32% 0%
+    }
+}
+
+@keyframes Animation-header {
+    0% {
+        background-position: 32% 0%
+    }
+
+    50% {
+        background-position: 69% 100%
+    }
+
+    100% {
+        background-position: 32% 0%
+    }
+}
