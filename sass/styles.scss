@@ -1,27 +1,23 @@
 @import "vars";
 
 .hero {
-  height: 150vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  // background-image: url("/img/img-hero-4.svg");
-  // background-size: cover;
-  // background-repeat: no-repeat;
-  // background-position: 0% 100%;
+
   .hero-shape {
     position: absolute;
     top: 0;
     right: 0;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 100%);
-    height: 150vh;
-    width: 60%;
-    background-color: $morado;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 40% 100%);
+    height: 100vh;
+    width: 50%;
+    @include cool-bg($morado, $rojo);
   }
 }
 
 .content-hero {
   position: relative;
-  height: 100vh;
 }
 
 .main-nav {
@@ -47,8 +43,11 @@
 .main-hero {
   width: 50%;
   font-size: 3rem;
-  font-weight: bolder;
-  line-height: 1.2;
   margin-top: 15vh;
+  h1 {
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 3rem;
+  }
   color: $rojo;
 }

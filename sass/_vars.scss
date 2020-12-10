@@ -17,6 +17,33 @@ body {
     width: 80%
 }
 
+@mixin rm-decoration() {
+    &:hover {
+        text-decoration: none !important;
+    }
+}
+
+
+
+.btn-a {
+    background-color: $morado;
+    font-weight: bolder;
+    font-size: 2rem;
+    color: #fff;
+    padding: 1.2rem 2rem;
+    border-radius: 2.2rem;
+    @include rm-decoration;
+    transition: ease-in all 0.1s;
+    &:hover {
+        background-color: darken($color: $morado, $amount: 10%);
+
+    }
+}
+
+
+
+
+
 @mixin cool-bg($color-a, $color-b) {
     background: linear-gradient(163deg, $color-a, $color-b);
     background-size: 400% 400%;
