@@ -21,6 +21,7 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jesus1554/lina-css@0.5/lina.min.css" />
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 	<link rel="stylesheet" href="styles/styles.css" />
 	<title>Jesús Flores</title>
 </head>
@@ -45,15 +46,103 @@
 					¡Hola!<br />
 					Soy Jesús Flores y construyo tecnología
 				</h1>
-				<a class="btn-a">Contáctame</a>
+				<a class="btn-a" href="#contacto">Contáctame</a>
 			</div>
 		</div>
 	</header>
 
 	<section class="container proyects">
 		<h1 class="txt-center">Proyectos</h1>
-		
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="center-center-v swiper-slide">
+					<img src="img/port-1.png" />
+					<div class="info-slide">
+						<h3>FotoCrypto</h3>
+						<p>Útil herramienta para encriptar texto en imágenes</p>
+						<a class="btn-a" target="_blank" href="https://github.com/jesus1554/FotoCrytpo">Visitar</a>
+					</div>
+				</div>
+				<div class="center-center-v swiper-slide">
+					<img src="img/port-2.png" />
+					<div class="info-slide">
+						<h3>Lina CSS</h3>
+						<p>Librería de estilos práctica lista para usarse</p>
+						<a class="btn-a" target="_blank" href="https://jesus1554.github.io/lina-css">Visitar</a>
+					</div>
+				</div>
+				<div class="center-center-v swiper-slide">
+					<img src="img/port-3.png" />
+					<div class="info-slide">
+						<h3>Nails JL</h3>
+						<p>Concepto de un sitio web para una manicurista</p>
+						<a class="btn-a" target="_blank" href="https://jesus1554.github.io/Nails-JL/">Visitar</a>
+					</div>
+				</div>
+				<div class="center-center-v swiper-slide">
+					<img src="img/port-4.png" />
+					<div class="info-slide">
+						<h3>De Electricidad</h3>
+						<p>Sitio web de un profesional en energía</p>
+						<a class="btn-a" target="_blank" href="https://deelectricidad.pro">Visitar</a>
+					</div>
+				</div>
+				<div class="center-center-v swiper-slide">
+					<img src="img/port-5.png" />
+					<div class="info-slide">
+						<h3>Nutrilínea</h3>
+						<p>Asesoría de nutrición de la mejor calidad</p>
+						<a class="btn-a" target="_blank" href="https://nutrilinea.mx">Visitar</a>
+					</div>
+				</div>
+				<div class="center-center-v swiper-slide">
+					<img src="img/port-6.png" />
+					<div class="info-slide">
+						<h3>Capacita</h3>
+						<p>La mejor seguridad industrial en el mercado</p>
+						<a class="btn-a" target="_blank" href="https://capacitamx.com">Visitar</a>
+					</div>
+				</div>
+			</div>
+			<!-- Add Arrows -->
+			<div class="swiper-button-next"></div>
+			<div class="swiper-button-prev"></div>
+		</div>
+	</section>
+
+	<section class="about">
+		<article class="about-txt container">
+			<h2>Acerca de mí</h2>
+			<p>
+				Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo iusto magni magnam sequi officiis, ratione
+				eveniet nam ad nobis minima!
+			</p>
+			<p>
+				Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos veniam at vero dolores natus
+				reiciendis accusamus possimus dolorem totam!</p>
+		</article>
+		<article class="about-photo">
+			<img src="img/profile.jpg" alt="Jesús Flores Espinoza">
+		</article>
 	</section>
 </body>
+
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+	const swiper = new Swiper('.swiper-container', {
+		spaceBetween: 30,
+		centeredSlides: true,
+		loop: true,
+		autoplay: {
+			delay: 2500,
+			disableOnInteraction: false,
+		},
+		navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		},
+	});
+</script>
 
 </html>

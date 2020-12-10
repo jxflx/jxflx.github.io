@@ -51,3 +51,54 @@
   }
   color: $rojo;
 }
+
+// Proyectos
+
+.proyects {
+  height: 100vh;
+  h1 {
+    font-weight: 700;
+    font-size: 6rem;
+    color: $naranja;
+  }
+}
+
+.swiper-container {
+  height: 70vh;
+  margin: 10vh auto;
+}
+
+.swiper-slide {
+  text-align: center;
+  img {
+    height: 30rem;
+  }
+  .info-slide h3 {
+    font-weight: 700;
+  }
+}
+
+// About
+.about {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  .about-photo {
+    height: 100%;
+  }
+}
+
+.about-txt {
+  p {
+    text-align: justify;
+    margin: 1rem auto;
+  }
+  h2 {
+    color: $morado;
+    font-weight: 700;
+  }
+  * {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
