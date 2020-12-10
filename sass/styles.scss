@@ -72,6 +72,7 @@
   text-align: center;
   img {
     height: 30rem;
+    border-radius: 1.7rem;
   }
   .info-slide h3 {
     font-weight: 700;
@@ -100,5 +101,56 @@
   * {
     width: 70%;
     margin: 0 auto;
+  }
+}
+
+// Lab
+
+.lab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+
+  .lab-txt {
+    h2 {
+      font-size: 4.5rem;
+      font-style: italic;
+      font-weight: 700;
+      color: $rojo;
+      line-height: 1.2;
+      margin-bottom: 3.5rem;
+    }
+  }
+
+  .lab-img {
+    img {
+      width: 200rem;
+    }
+  }
+}
+
+// footer
+
+.bg-foot {
+  background-color: $rojo;
+
+}
+
+.footer-site {
+  justify-content: space-between;
+  height: 30vh;
+  .contact-links {
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    a {
+      @include rm-decoration(#fff);
+    }
+  }
+  .phrase-foot h2 {
+    font-weight: 700;
+    color: $azul;
   }
 }

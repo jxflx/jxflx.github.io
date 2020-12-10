@@ -17,11 +17,11 @@ body {
     width: 80%
 }
 
-@mixin rm-decoration() {
+@mixin rm-decoration($color) {
     &:hover {
         text-decoration: none !important;
     }
-    color: #fff !important;
+    color: $color !important;
 }
 
 
@@ -32,7 +32,7 @@ body {
     font-size: 2rem;
     padding: 1.2rem 2rem;
     border-radius: 2.2rem;
-    @include rm-decoration;
+    @include rm-decoration(#fff);
     transition: ease-in all 0.1s;
     &:hover {
         background-color: darken($color: $morado, $amount: 10%);
