@@ -1,2 +1,26 @@
 @import 'vars';
 
+.lab-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include cool-bg(#7ee8fa, #eec0c6);
+    .logo {
+        font-size: 4rem;
+        font-style: italic;
+        @include cool-bg($morado, $rojo);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        padding: 0.2rem 1rem;
+    }
+}
+
+#random-btn {
+    padding: 1rem;
+    font-size: 3rem;
+    color: #fff;
+    text-decoration: none;
+    &:hover {
+        font-style: italic;
+    }
+}
