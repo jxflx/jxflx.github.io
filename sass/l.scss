@@ -1,0 +1,49 @@
+@import "vars";
+
+.todo {
+    width: 100%;
+    min-height: 100vh;
+    @include cool-bg($rojo, $morado);
+}
+
+.me-photo-links {
+
+    img {
+        height: 20rem;
+        @media (max-width: 700px) {
+            height: 15rem;
+        }
+        border-radius: 50%;
+    }
+    margin-bottom: 2.5rem;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 5rem;
+    background-color: #fff;
+    i {
+        margin-right: 1rem;
+        font-size: 3rem;
+    }
+    border-radius: 2rem;
+    width: 100%;
+    margin: 1.5rem auto;
+}
+.tw {
+    @include rm-decoration(#367bf0);
+}
+.in {
+    @include rm-decoration(#C13584);
+}
+.em {
+    @include rm-decoration(#FD1D1D);
+}
+.tl {
+    @include rm-decoration(#0088CC);
+}
+.gh {
+    @include rm-decoration(#24292e);
+}
